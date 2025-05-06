@@ -1,147 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norranat S. - Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        html { scroll-behavior: smooth; }
-        .hero-container { position: relative; }
-        #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0; }
-        .hero-content { position: relative; z-index: 10; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Norranat S. - Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-container { position: relative; }
+    #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0; }
+    .hero-content { position: relative; z-index: 10; }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md fixed w-full z-20 top-0">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-lg font-semibold text-gray-700">Norranat S.</h1>
-            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-            <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
-                <li><a href="#about" class="hover:text-gray-900">About</a></li>
-                <li><a href="#experience" class="hover:text-gray-900">Experience</a></li>
-                <li><a href="#projects" class="hover:text-gray-900">Projects</a></li>
-                <li><a href="#contact" class="hover:text-gray-900">Contact</a></li>
-            </ul>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-20 top-0">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-lg font-semibold text-gray-700">Norranat S.</h1>
+      <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      <ul id="desktop-menu" class="hidden md:flex space-x-6 text-gray-600">
+        <li><a href="#about" class="hover:text-gray-900">About</a></li>
+        <li><a href="#experience" class="hover:text-gray-900">Experience</a></li>
+        <li><a href="#certificate" class="hover:text-gray-900">Certificates</a></li>
+        <li><a href="#projects" class="hover:text-gray-900">Projects</a></li>
+        <li><a href="#education" class="hover:text-gray-900">Education</a></li>
+        <li><a href="#contact" class="hover:text-gray-900">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white w-full px-6 py-4">
+      <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
+      <a href="#experience" class="block py-2 text-gray-600 hover:text-gray-900">Experience</a>
+      <a href="#certificate" class="block py-2 text-gray-600 hover:text-gray-900">Certificates</a>
+      <a href="#projects" class="block py-2 text-gray-600 hover:text-gray-900">Projects</a>
+      <a href="#education" class="block py-2 text-gray-600 hover:text-gray-900">Education</a>
+      <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-container h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-20 bg-gray-900 text-white gap-6 md:gap-12 pt-20">
+    <div id="particles-js"></div>
+
+    <!-- Text Content -->
+    <div class="hero-content w-full md:w-1/2 ml-12">
+      <h2 class="text-3xl md:text-4xl font-bold">Hello! I'm <span class="text-blue-400">Norranat</span> 👋</h2>
+      <p class="text-lg mt-4">Networking & Cloud & AI Engineer</p>
+      <p class="text-sm mt-2">Believe in infinite learning, connection, and teamwork.</p>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="hero-content w-full md:w-1/2 flex justify-center">
+      <img src="pic/hero-pic.jpg" alt="Norranat" class="w-48 h-48 md:w-72 md:h-72 rounded-full shadow-lg object-cover border-4 border-white">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 mt-12">
+    <!-- About Section -->
+    <section id="about" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+      <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+        <i class="fa-regular fa-circle-user text-blue-600 text-2xl"></i>
+        <h2 class="text-2xl font-bold text-blue-600 leading-none">About Me</h2> 
+      </div>
+      <div class="text-base text-gray-800 leading-relaxed space-y-4">
+        <p>
+            Hi! I’m <strong>Norranat Songsriboonsit</strong> — but most people call me <strong>So</strong>, which is my nickname. 
+            Some also go with <strong>Song</strong> because it sounds like my last name (even though that’s just a funny coincidence haha).
+        </p>
+        <p>
+            I was born and raised in Thailand (yep, the long name probably gave it away!), and I'm currently based in Japan, working as an AI Engineer.
+        </p>
+        <p>
+            I built this website as a little corner of the internet to share my journey — from <em>professional experiences</em> to <em>memories</em>, <em>thoughts</em>, and anything I find meaningful. 
+            If something here resonates with you, feel free to explore and connect!
+        </p>
+        <p>
+            I love meeting people from different backgrounds and discovering ways to collaborate. I speak Thai, English, and a bit of Japanese — so don’t hesitate to reach out. 
+            Who knows? We might build something great together.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+        <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+            <i class="fa-solid fa-user-tie text-2xl" style="color: #2563eb;"></i>
+            <h2 class="text-2xl font-bold text-blue-600 leading-none">Professional Experience</h2> 
         </div>
-        <div id="mobile-menu" class="hidden bg-white md:hidden w-full px-6 py-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
-            <a href="#experience" class="block py-2 text-gray-600 hover:text-gray-900">Experience</a>
-            <a href="#projects" class="block py-2 text-gray-600 hover:text-gray-900">Projects</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-container h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-20 bg-gray-900 text-white gap-6 md:gap-12">
-        <!-- Particles.js Animation -->
-        <div id="particles-js"></div>
-    
-        <!-- Text Content -->
-        <div class="hero-content w-full md:w-1/2">
-            <h2 class="text-3xl md:text-4xl font-bold">Hello! I'm <span class="text-blue-400">Norranat</span> 👋</h2>
-            <p class="text-lg mt-4">Networking & Cloud Engineer | AI Researcher</p>
-            <p class="text-sm mt-2">Passionate about infinite learning, connection, and teamwork.</p>
-        </div>
-    
-        <!-- Profile Image -->
-        <div class="hero-content w-full md:w-1/2 flex justify-center">
-            <img src="pic/hero-pic.jpg" alt="Norranat" class="w-48 h-48 md:w-72 md:h-72 rounded-full shadow-lg object-cover border-4 border-white">
-        </div>
-    </header>
-
-    <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 50, density: { enable: true, value_area: 800 } },
-                color: { value: "#ffffff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 3, random: true },
-                move: { enable: true, speed: 1 }
-            },
-            interactivity: {
-                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
-            },
-            retina_detect: true
-        });
-
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
-
-    <main class="container mx-auto px-6 mt-12">
-        <!-- About Section -->
-        <section id="about" class="mb-12 bg-white p-6 shadow-md rounded-lg">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">About Me</h2>
-            <p class="text-sm text-gray-700">A graduate student passionate about networking, cloud, and security. My goal is to support secure network infrastructure for society. Born and raised in Thailand, currently pursuing a Master’s degree in Information Science in Japan.</p>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="mb-12 bg-white p-6 shadow-md rounded-lg">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Experience</h2>
-            <ul class="list-disc list-inside text-sm text-gray-700">
-                <li><strong>KPMG Consulting Thailand</strong> - Cybersecurity Consulting (Internship)</li>
-                <li><strong>Thai National Research Center</strong> - Research Assistant (Internship)</li>
-                <li><strong>Japan Advanced Institute of Science and Technology</strong> - Research Assistant (Internship)</li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="mb-12 bg-white p-6 shadow-md rounded-lg">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Professional Certifications</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 border border-gray-300 rounded-lg hover:shadow-md transition">
-                    <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Cisco CCNA</a>
-                    <p class="text-sm text-gray-600">Certified in network fundamentals, routing, and switching.</p>
-                </div>
-                <div class="p-4 border border-gray-300 rounded-lg hover:shadow-md transition">
-                    <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">AWS Certified Solutions Architect</a>
-                    <p class="text-sm text-gray-600">Certified in designing cloud-based solutions on AWS.</p>
-                </div>
+        <div class="text-base text-gray-800 leading-relaxed space-y-4">
+            <div class="space-y-2">
+                <p><strong>June - September 2023</strong> <em>KPMG Consulting Thailand</em> - Cybersecurity Consulting (Internship)</p>
+                <p class="text-sm text-gray-600">Worked on security audits, vulnerability assessments, and created reports for enterprise clients. Gained hands-on experience in risk analysis and ISO standards.</p>
             </div>
-        </section>
+            <div class="space-y-2">
+                <p><strong>June - July 2022</strong> <em>Japan Advanced Institute of Science and Technology</em> - Research Assistant (Internship)</p>
+                <p class="text-sm text-gray-600">Assisted in research involving AI-based deepfake speech detection. Contributed to data cleaning, Python scripts, and research documentation.</p>
+            </div>
+            <div class="space-y-2">
+                <p><strong>June 2021 - July 2023</strong> <em>Thai National Research Center</em> - Research Assistant (Internship)</p>
+                <p class="text-sm text-gray-600">Participated in machine learning and signal processing projects in audio, agriculture, and communication systems. Supported experiments and technical writing.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="mb-12 bg-white p-6 shadow-md rounded-lg">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Contact</h2>
-            
-            <p class="text-sm text-gray-700 flex items-center">
-                <i class="fas fa-envelope text-blue-600 mr-2"></i>  
-                <span class="font-bold mr-1">Email:</span>norranat.songsriboonsit@gmail.com
-                    <a href="mailto:norranat.songsriboonsit@gmail.com" id="emailLink" class="text-gray-700 hover:text-gray-900 flex items-center" onclick="copyEmail()">
-                    <i class="fa-solid fa-copy ml-2 cursor-pointer" style="color: #000000;" title="Copy Email" onclick="copyEmail()"></i>
-                </a>
-            </p>
-            
-            <script>
-                function copyEmail() {
-                    const email = "norranat.songsriboonsit@gmail.com";
-                    navigator.clipboard.writeText(email).then(function() {
-                        alert("Email copied to clipboard!");
-                    }, function(err) {
-                        console.error('Error copying email: ', err);
-                    });
-                }
-            </script>
-            
-            <p class="text-sm text-gray-700 flex items-center mt-4">
-                <i class="fab fa-linkedin text-blue-600 mr-2.5"></i>
-                <span class="font-bold mr-1">LinkedIn:</span>Norranat Songsriboonsit
-                <a href="https://www.linkedin.com/in/norranat-songsriboonsit-74115a205/" target="_blank" class="text-gray-700 hover:text-gray-900 flex items-center">
-                    <i class="fa-solid fa-link ml-2" style="color: #000000;"></i>
-                </a>
-            </p>
-        </section>
-    </main>
+    
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-white text-gray-600 text-sm border-t border-gray-300">
+    <!-- Certificate Section -->
+    <section id="certificate" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+        <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+            <i class="fa-solid fa-certificate text-2xl" style="color: #2563eb;"></i>
+            <h2 class="text-2xl font-bold text-blue-600 leading-none">Professional Certificates</h2>
+        </div>
+        <div class="text-base text-gray-800 leading-relaxed space-y-4">
+        <div class="space-y-2">
+            <p><strong>Cisco CCNA 200-301</strong> – Issued by Cisco in July 2024</p>
+            <p class="text-sm text-gray-600">Validates skills in network fundamentals, IP connectivity, automation, and security — foundational for network engineers.</p>
+        </div>
+        <div class="space-y-2">
+            <p><strong>AWS Certified Cloud Practitioner</strong> – Issued by Amazon Web Services in November 2023</p>
+            <p class="text-sm text-gray-600">Covers AWS Cloud fundamentals, services, and global infrastructure, with a focus on cloud economics and security best practices.</p>
+        </div>
+        <div class="space-y-2">
+            <p><strong>Certified in Cybersecurity (CC)</strong> – Issued by ISC2 in August 2023</p>
+            <p class="text-sm text-gray-600">Recognizes foundational knowledge in cybersecurity principles, risk management, and incident response.</p>
+        </div>
+        <div class="space-y-2">
+            <p><strong>JR Penetration Tester</strong> – Issued by TryHackMe in August 2023</p>
+            <p class="text-sm text-gray-600">Demonstrates hands-on experience with ethical hacking tools and techniques used to identify and mitigate system vulnerabilities.</p>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+        <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+            <i class="fa-solid fa-cubes text-2xl" style="color: #2563eb;"></i>
+            <h2 class="text-2xl font-bold text-blue-600 leading-none">Hands-on Projects</h2>
+        </div>
+        <div class="text-base text-gray-800 leading-relaxed space-y-4">
+        <p>You can explore some of my technical and academic projects by clicking the link below:</p>
+        <p>
+            <a href="https://medium.com/@norranat.songsriboonsit" target="_blank" class="text-blue-600 underline hover:text-blue-800">
+            View My Project Portfolio
+            </a>
+        </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+        <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+          <i class="fa-solid fa-user-graduate text-2xl" style="color: #2563eb;"></i>
+          <h2 class="text-2xl font-bold text-blue-600 leading-none">Education</h2> 
+        </div>
+        <div class="text-base text-gray-800 leading-relaxed space-y-4">
+          <div class="space-y-2">
+            <p><strong>October 2023 - September 2025</strong> <em>Tohoku University</em> - Master of Information Sciences</p>
+            <p class="text-sm text-gray-600">Focused on communication networks and AI for network optimization. The main research theme was FSO-based communication with cloud attenuation modeling.</p>
+          </div>
+          <div class="space-y-2">
+            <p><strong>August 2019 - May 2023</strong> <em>SIIT, Thammasat University</em> - B.Eng. in Electrical and Communication Engineering</p>
+            <p class="text-sm text-gray-600">Studied topics in signal processing, embedded systems, and data science. Graduated with First-Class Honors.</p>
+          </div>
+          <div class="space-y-2">
+            <p><strong>May 2016 - February 2019</strong> <em>Mahidol Wittayanusorn School</em> - High School, Mathematics and Science Program</p>
+            <p class="text-sm text-gray-600">National science-focused high school with advanced curriculum in math and science.</p>
+          </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="mb-12 bg-white p-8 md:p-12 shadow-xl rounded-2xl border border-gray-200">
+        <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-100 pb-2">
+            <i class="fa-regular fa-address-card text-2xl" style="color: #2563eb;"></i>
+            <h2 class="text-2xl font-bold text-blue-600 leading-none">Contact Me</h2>
+        </div>
+    
+        <div class="space-y-4 text-base text-gray-800">
+        <!-- Email -->
+        <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center">
+            <i class="fas fa-envelope text-blue-600 mr-2"></i>
+            <span class="font-semibold mr-1">Email:</span>
+            <span>norranat.songsriboonsit@gmail.com</span>
+            </div>
+            <button onclick="copyEmail()" class="flex items-center text-sm text-gray-600 hover:text-blue-600">
+            <i class="fa-solid fa-copy mr-1"></i> Copy Email
+            </button>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center">
+            <i class="fab fa-linkedin text-blue-600 mr-2.5"></i>
+            <span class="font-semibold mr-1">LinkedIn:</span>
+            <span>Norranat Songsriboonsit</span>
+            </div>
+            <a href="https://www.linkedin.com/in/norranat-songsriboonsit-74115a205/" target="_blank"
+            class="flex items-center text-sm text-gray-600 hover:text-blue-600">
+            <i class="fa-solid fa-link mr-1"></i> View Profile
+            </a>
+        </div>
+        </div>
+    
+        <script>
+        function copyEmail() {
+            const email = "norranat.songsriboonsit@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+            alert("Email copied to clipboard!");
+            }).catch(err => {
+            console.error('Failed to copy: ', err);
+            });
+        }
+        </script>
+    </section>
+
+  </main>
+
+      <!-- Footer -->
+      <footer class="text-center py-4 bg-white text-gray-600 text-sm border-t border-gray-300">
         <p>© 2025 Norranat Songsriboonsit. All rights reserved
+
+
+  <!-- Scripts -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        }
+      },
+      retina_detect: true
+    });
+
+    // Toggle mobile menu
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+
+    // Center sections on click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            const offset = window.innerHeight / 2 - target.offsetHeight / 2;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+
+            // Hide mobile menu after click
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+        });
+    });
+  </script>
+</body>
+</html>
